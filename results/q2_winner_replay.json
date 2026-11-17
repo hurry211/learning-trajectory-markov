@@ -1,0 +1,12 @@
+{
+  "mode": "one recorded winning seed; original full-grid tables retained as provenance, not rerun",
+  "k": 5,
+  "seed": 436572576,
+  "train_loglik": -10761.58583068655,
+  "archived_train_loglik": -10761.58583068655,
+  "absolute_loglik_difference": 0.0,
+  "iterations": 217,
+  "n_training_sequences": 450,
+  "n_training_observations": 12600,
+  "warnings": []
+}

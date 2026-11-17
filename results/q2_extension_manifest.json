@@ -1,0 +1,26 @@
+{
+  "kind": "reproduction_and_fixed_model_paired_bootstrap_not_new_holdout",
+  "selected_k": 5,
+  "chosen_kind": "CategoricalHMM",
+  "partition": {
+    "landmark": 28,
+    "risk_set_definition": "registered by day 0 and not administratively unregistered before landmark",
+    "inner_training_presentations": [
+      "2013B",
+      "2013J"
+    ],
+    "inner_validation_presentation": "2014B",
+    "untouched_outer_presentation": "2014J",
+    "student_overlap_inner_train_validation": 0,
+    "student_overlap_development_outer": 0,
+    "excluded_late_or_missing_registration": 244
+  },
+  "seed": 20260822,
+  "bootstrap_seed_base": 20261116,
+  "paired_cluster": "id_student",
+  "replicates": 2000,
+  "max_abs_auc_difference_from_archived": 7.5293221922789755e-06,
+  "max_abs_brier_difference_from_archived": 4.385380947269368e-15,
+  "elapsed_seconds": 212.21581110000005,
+  "uncertainty_scope": "Paired test-student cluster bootstrap conditional on fixed fitted models; no model-selection uncertainty."
+}

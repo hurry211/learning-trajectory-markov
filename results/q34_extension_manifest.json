@@ -1,0 +1,342 @@
+{
+  "kind": "locked_observable_NHMC_reproduction_and_sensitivity_not_causal",
+  "paths_per_scenario_per_context": 100000,
+  "contexts": 2,
+  "scenarios": {
+    "reference_observed_profile": {
+      "label": "Reference observed profile",
+      "r_target": null,
+      "h_target": null,
+      "definition": "Preserve each 2021 anchor's observed lagged profile and availability pattern."
+    },
+    "upper_revisit_profile": {
+      "label": "Upper-quartile revisit profile",
+      "r_target": 0.7614678899082569,
+      "h_target": null,
+      "definition": "Set R_hist to its discovery upper quartile only where revisit is observable; preserve H."
+    },
+    "upper_time_concentration_profile": {
+      "label": "Upper-quartile time-concentration profile",
+      "r_target": null,
+      "h_target": 0.8216716972411592,
+      "definition": "Set H_hist to its discovery upper quartile only where H is observable; preserve R."
+    },
+    "joint_supported_upper_profile": {
+      "label": "Joint supported upper profile",
+      "r_target": 0.7613636363636364,
+      "h_target": 0.8211596150768432,
+      "definition": "Use the observed joint-support point nearest the two upper quartiles where both are available."
+    }
+  },
+  "anchors": 1399,
+  "scoped_pseudonyms": 1399,
+  "optimization_audit": [
+    {
+      "source_state": 0,
+      "success": true,
+      "reason": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "iterations": 140,
+      "objective": 150444.49843725874,
+      "effective_rows": 247902,
+      "effective_mass": 247902.0
+    },
+    {
+      "source_state": 1,
+      "success": true,
+      "reason": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "iterations": 135,
+      "objective": 80798.13940969782,
+      "effective_rows": 86200,
+      "effective_mass": 86200.0
+    },
+    {
+      "source_state": 2,
+      "success": true,
+      "reason": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "iterations": 113,
+      "objective": 18390.58292279243,
+      "effective_rows": 16256,
+      "effective_mass": 16256.0
+    },
+    {
+      "source_state": 3,
+      "success": true,
+      "reason": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "iterations": 109,
+      "objective": 5596.122481461046,
+      "effective_rows": 4905,
+      "effective_mass": 4905.0
+    }
+  ],
+  "feature_transformer": {
+    "raw_names": [
+      "r_hist_1_7d",
+      "r_available",
+      "log1p_r_opportunity",
+      "h_hist_7d",
+      "h_available",
+      "log1p_h_sessions",
+      "course_progress",
+      "weekend",
+      "course_global_economics"
+    ],
+    "design_names": [
+      "intercept",
+      "r_hist_1_7d",
+      "r_available",
+      "log1p_r_opportunity",
+      "h_hist_7d",
+      "h_available",
+      "log1p_h_sessions",
+      "course_progress",
+      "weekend",
+      "course_global_economics"
+    ],
+    "continuous_indices": [
+      0,
+      2,
+      3,
+      5,
+      6
+    ],
+    "training_medians": [
+      0.5813953488372093,
+      1.0,
+      2.5649493574615367,
+      0.6902699645066385,
+      0.0,
+      1.0986122886681098,
+      0.4954128440366973,
+      0.0,
+      1.0
+    ],
+    "training_means": [
+      0.533092323483175,
+      0.0,
+      2.198158929703258,
+      0.6839359589146762,
+      0.0,
+      1.1239847278491344,
+      0.49594525745715157,
+      0.0,
+      0.0
+    ],
+    "training_scales": [
+      0.26976184285701094,
+      1.0,
+      1.657141315037522,
+      0.12764614725770002,
+      1.0,
+      0.8700362763619897,
+      0.2886659073145247,
+      1.0,
+      1.0
+    ],
+    "missing_value_indices": [
+      0,
+      3
+    ]
+  },
+  "coefficients": [
+    [
+      [
+        -1.8393769566226625,
+        0.06486979854722488,
+        0.5305237921291903,
+        0.14713488629181723,
+        -0.015193092499390085,
+        0.15430857377257942,
+        0.23537706898998198,
+        -0.1621528321085139,
+        0.1542239594894048,
+        -0.2275622226687411
+      ],
+      [
+        -3.147966671402405,
+        -0.07726176791544564,
+        -0.10317958513046803,
+        -0.07343863665301888,
+        -0.02991299932058111,
+        -0.03073506392044295,
+        0.5816677782742545,
+        -0.18005882411870963,
+        0.22841012075292613,
+        -0.1680649763691204
+      ],
+      [
+        -5.194861978142512,
+        0.0027742324778493466,
+        0.7013593916047581,
+        -0.4020430013388611,
+        -0.032857379615695875,
+        0.208323579381197,
+        0.6181651811884745,
+        -0.3287990798555902,
+        0.36234515392564887,
+        -0.3080911948262694
+      ]
+    ],
+    [
+      [
+        -0.2971362239121231,
+        -0.07305509664960816,
+        -0.26470473056213206,
+        0.0634357197937929,
+        -0.029948867428998896,
+        0.12589775058399597,
+        0.25098059618026636,
+        0.13311048770663783,
+        0.07777366633409247,
+        -0.03177973289263219
+      ],
+      [
+        -1.9283081921737621,
+        -0.2212858357985492,
+        -0.6028072844801448,
+        -0.26245040324886804,
+        -0.047082531153797125,
+        -0.023468209973214728,
+        0.7105769160715262,
+        0.28430679725970703,
+        0.15911731136287152,
+        0.015906958282643397
+      ],
+      [
+        -3.625045845776646,
+        -0.17472653208190353,
+        0.22938215867327086,
+        -0.5695936578970151,
+        -0.05766140193905691,
+        0.06956544922914125,
+        0.6487929550796352,
+        -0.00030722573544758044,
+        0.4548404928849345,
+        -0.08565483885224817
+      ]
+    ],
+    [
+      [
+        -0.5260128074698062,
+        -0.02432630970599674,
+        0.20827173065276397,
+        0.18704546237774725,
+        -0.026193735831378673,
+        0.6286203513493465,
+        -0.4193643064640401,
+        0.1556556535164098,
+        -0.051855279961330686,
+        -0.15150475566224572
+      ],
+      [
+        -1.297544093940533,
+        -0.2507355415881645,
+        -0.17229685742544143,
+        -0.11397417284062836,
+        -0.020531621689114207,
+        0.5215443548903028,
+        0.1614894915998754,
+        0.5793873022420443,
+        -0.06701290111198462,
+        0.07372429305459895
+      ],
+      [
+        -2.9874594666830436,
+        -0.19283555465968463,
+        0.1920565060025055,
+        -0.3317808127423767,
+        -0.044774821904837704,
+        0.6092584849570802,
+        0.20184121087274093,
+        0.3730197857248659,
+        0.1384426907508049,
+        -0.1340827797059296
+      ]
+    ],
+    [
+      [
+        -0.8264775394350184,
+        -0.014087650019390734,
+        0.47976733069752986,
+        0.15377655641321739,
+        -0.04640015635158556,
+        0.2488938480071963,
+        -0.17580206464136916,
+        0.1893138566086922,
+        0.17527501507578458,
+        -0.15427465980253013
+      ],
+      [
+        -1.6938996796900712,
+        -0.22310754157337595,
+        -0.24818997891874395,
+        -0.18042923140105155,
+        -0.0738932314690809,
+        0.24769565322932402,
+        0.45210114758714803,
+        0.7909922180834905,
+        0.1708986110587808,
+        -0.016281597849367883
+      ],
+      [
+        -2.2647401742368523,
+        -0.20330601993250552,
+        0.3716869977600284,
+        -0.6281387760017655,
+        -0.10050266320173,
+        0.21096817789046868,
+        0.5773993330683129,
+        0.7076554303790723,
+        0.14397960211023242,
+        -0.09231108471464393
+      ]
+    ]
+  ],
+  "calibration": {
+    "feature_names": [
+      "course_global_economics",
+      "history_share_obs_0",
+      "history_share_obs_1",
+      "history_share_obs_2",
+      "history_share_obs_3",
+      "forecast_share_obs_0",
+      "forecast_share_obs_1",
+      "forecast_share_obs_2",
+      "forecast_share_obs_3",
+      "forecast_max_pi_run_share",
+      "forecast_last7_active_share"
+    ],
+    "base_fit_partition": "1819",
+    "platt_calibration_partition": "1920",
+    "untouched_evaluation_partition": "2021",
+    "prediction_time": "after observing/simulating course days 0-55",
+    "outcome": "official PASSED indicator",
+    "estimand_label": "calibrated association-model score, not simulated causal completion",
+    "base_coefficients": [
+      -0.450008198487439,
+      -0.5927613746309354,
+      0.043112298349558174,
+      0.38948264176365216,
+      0.2693753023125079,
+      -1.8290377675163523,
+      0.35265847057335326,
+      0.6048663013516528,
+      0.9807218633861252,
+      -0.21812244493853356,
+      0.17429627448320267
+    ],
+    "base_intercept": 2.4075332497267303,
+    "platt_slope": 1.1788146346429713,
+    "platt_intercept": 0.07556592409750999
+  },
+  "all_dp_mc_within_five_mcse": true,
+  "kernel_bound_violations": 0,
+  "scope_cautions": [
+    "Observed-future covariates are oracle conditioning, not a deployable day-28 forecast.",
+    "Frozen history holds behavioral covariates fixed and assumes the fitted conditional model remains applicable.",
+    "The archived NH-HMM/NHMC outer comparison influenced fallback; no new untouched-holdout claim.",
+    "Kernel perturbations are stress tests, not empirically identified student interventions.",
+    "Completion values are association scores with poor cross-year calibration, not pass probabilities or effects.",
+    "KU pseudonyms cannot link students across courses/years; bootstrap units are registrations, not verified unique people."
+  ],
+  "elapsed_seconds": 29.67758270000195
+}

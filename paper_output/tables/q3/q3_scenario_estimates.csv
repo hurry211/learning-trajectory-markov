@@ -1,0 +1,5 @@
+﻿scenario_id,scenario_label,paths,completion_score_mean,completion_score_mcse,sustained_participation_probability,sustained_participation_mcse,continuous_pi_risk,continuous_pi_risk_mcse,r_target,h_target,causal_interpretation_allowed,epsilon_nondominated_point
+reference_observed_profile,Reference observed profile,30000,0.7626633305552504,0.0007303567994058484,0.8987,0.0017420423331202413,0.43473333333333336,0.0028620997760231337,,,False,True
+upper_revisit_profile,Upper-quartile revisit profile,30000,0.7624192084052787,0.0007289254029944496,0.9015666666666666,0.0017199532015071187,0.4295333333333333,0.002857986569691569,0.7614678899082569,,False,True
+upper_time_concentration_profile,Upper-quartile time-concentration profile,30000,0.7607357392573082,0.0007276180285597861,0.8975666666666666,0.0017506552140006883,0.4415,0.0028669726747466437,,0.8216716972411592,False,False
+joint_supported_upper_profile,Joint supported upper profile,30000,0.7604985676177332,0.0007263590120772219,0.9005,0.0017282239125558157,0.4358666666666667,0.0028629536732734076,0.7613636363636364,0.8211596150768432,False,False

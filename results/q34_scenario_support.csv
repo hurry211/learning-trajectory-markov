@@ -1,0 +1,5 @@
+scenario_id,scenario_label,r_target,h_target,r_available_forecast_share,h_available_forecast_share,both_available_forecast_share,availability_pattern_changed,within_marginal_training_support,joint_target_is_observed_point
+reference_observed_profile,Reference observed profile,,,0.9155519248442765,0.7663382007556417,0.7663382007556417,False,True,False
+upper_revisit_profile,Upper-quartile revisit profile,0.7614678899082569,,0.9155519248442765,0.7663382007556417,0.7663382007556417,False,True,False
+upper_time_concentration_profile,Upper-quartile time-concentration profile,,0.8216716972411592,0.9155519248442765,0.7663382007556417,0.7663382007556417,False,True,False
+joint_supported_upper_profile,Joint supported upper profile,0.7613636363636364,0.8211596150768432,0.9155519248442765,0.7663382007556417,0.7663382007556417,False,True,True

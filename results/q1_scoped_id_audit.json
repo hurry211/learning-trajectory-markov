@@ -1,0 +1,33 @@
+{
+  "kind": "fixed_archived_prediction_reanalysis_not_new_holdout",
+  "seed": 20261116,
+  "registrations": 1399,
+  "scoped_pseudonyms": 1399,
+  "bootstrap_cluster": "registration",
+  "replicates": 10000,
+  "delta_nat_per_observation": 0.02255905580458125,
+  "ci_95_percentile": [
+    0.020027188903186072,
+    0.024992813796713326
+  ],
+  "numeric_id_collisions_not_identity_overlap": [
+    {
+      "cohort_a": "1819",
+      "cohort_b": "1920",
+      "shared_released_user_ids": 820
+    },
+    {
+      "cohort_a": "1819",
+      "cohort_b": "2021",
+      "shared_released_user_ids": 839
+    },
+    {
+      "cohort_a": "1920",
+      "cohort_b": "2021",
+      "shared_released_user_ids": 821
+    }
+  ],
+  "id_scope_caution": "Pseudonyms cannot identify the same learner across courses and academic years. Bare numeric collisions are NOT evidence of student overlap. True cross-course/academic-year student-disjointness cannot be verified.",
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13066476/#sec5",
+  "uncertainty_scope": "Fixed fitted model; excludes selection/refitting uncertainty."
+}

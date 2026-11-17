@@ -1,0 +1,8 @@
+﻿model,start,converged,iterations,train_loglik_per_day,inner_loglik_per_day,min_state_occupancy,min_pairwise_emission_js,optimizer_all_success,passes_identifiability_gate,passes_predictive_gate,seed,inner_gain_vs_nhmc_per_day,outer_loglik_per_day,outer_gain_vs_final_nhmc_per_day,passes_outer_0.001_gain_gate,selected_for_scenarios
+Observable-NHMC,,True,,-0.6796005030082305,-0.7677160574187,,,False,True,True,,,,,,
+Joint-NH-HMM-K2,1.0,False,30.0,-0.6920935260188928,-0.7683264998936427,0.33963668345309744,0.23085040300654236,True,False,False,20261831.0,-0.0006104424749426851,,,,
+Joint-NH-HMM-K2,2.0,False,30.0,-0.6920722359524006,-0.7682952403633099,0.3386596895037017,0.2321456639245975,True,False,False,20262840.0,-0.0005791829446099017,,,,
+Joint-NH-HMM-K2,3.0,False,30.0,-0.6922062641478165,-0.7684280600030596,0.34725816452566727,0.2234647422061791,True,False,False,20263849.0,-0.0007120025843596611,,,,
+Joint-NH-HMM-K2,4.0,False,30.0,-0.6921946595901395,-0.7684564194612146,0.3443702223993117,0.2249656261440822,True,False,False,20264858.0,-0.0007403620425145974,,,,
+Joint-NH-HMM-K2,5.0,False,30.0,-0.6919878258744663,-0.7681363585424574,0.33631685409833467,0.23679454413307002,True,False,False,20265867.0,-0.00042030112375746054,,,,
+Final-Observable-NHMC,,True,,,,,,,,,,,-1.0375690448788564,0.0,True,True

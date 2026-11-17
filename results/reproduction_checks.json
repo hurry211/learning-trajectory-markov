@@ -1,0 +1,9 @@
+{
+  "q34_original_30000_path_aggregate_max_abs_difference": 0.0,
+  "q34_same_kernel_dp_mc_checks": 40,
+  "q34_max_standardized_error": 1.9608573433863488,
+  "q34_kernel_stress_checks": 48,
+  "q34_epsilon_rows": 288,
+  "q2_max_auc_replay_error": 7.5293221922789755e-06,
+  "q2_max_brier_replay_error": 4.385380947269368e-15
+}

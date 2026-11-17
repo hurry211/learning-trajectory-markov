@@ -1,0 +1,187 @@
+{
+  "generated_at_utc": "2026-11-17T02:54:35.230058+00:00",
+  "purpose": "reproduction and post-hoc diagnostics; not proof of all paper claims",
+  "python": "3.13.2",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.1",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.8.0",
+    "hmmlearn": "0.3.3",
+    "matplotlib": "3.10.7",
+    "pyarrow": "23.0.1",
+    "polars": "1.42.1",
+    "joblib": "1.5.3"
+  },
+  "tests": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "tests": 8,
+      "passed": true
+    },
+    {
+      "command": "python -m unittest discover -s paper_output/code/modeling/tests -v",
+      "tests": 9,
+      "passed": true
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "path": "paper_output/code/modeling/run_q1_full.py",
+      "archived_sha256": "96810ca7f391fab49c74e19cbabcb5ed7a75e3e01da89d01876756a902f4f5c4",
+      "current_sha256": "96810ca7f391fab49c74e19cbabcb5ed7a75e3e01da89d01876756a902f4f5c4",
+      "match": true
+    },
+    {
+      "path": "paper_output/code/modeling/sequence_models.py",
+      "archived_sha256": "5888380810eb4dea4a1c78d27c76119c2583606cfd67d3e264da4f602c67ee1a",
+      "current_sha256": "5888380810eb4dea4a1c78d27c76119c2583606cfd67d3e264da4f602c67ee1a",
+      "match": true
+    },
+    {
+      "path": "paper_output/code/modeling/run_q2_oulad.py",
+      "archived_sha256": "84470522d3086100c9e80e6c962c271d005e1cc9ce6f960d0406bee9726a79c3",
+      "current_sha256": "84470522d3086100c9e80e6c962c271d005e1cc9ce6f960d0406bee9726a79c3",
+      "match": true
+    },
+    {
+      "path": "paper_output/code/modeling/sequence_models.py",
+      "archived_sha256": "5888380810eb4dea4a1c78d27c76119c2583606cfd67d3e264da4f602c67ee1a",
+      "current_sha256": "5888380810eb4dea4a1c78d27c76119c2583606cfd67d3e264da4f602c67ee1a",
+      "match": true
+    },
+    {
+      "path": "paper_output/code/modeling/run_q34_scenarios.py",
+      "archived_sha256": "3431a2f40834043219cd08cb0dc09f2c14712e418a391c38dcd186c70477df53",
+      "current_sha256": "3431a2f40834043219cd08cb0dc09f2c14712e418a391c38dcd186c70477df53",
+      "match": true
+    },
+    {
+      "path": "paper_output/code/modeling/q34_helpers.py",
+      "archived_sha256": "485d522a5779eb5092513384360484ab3ec35b9938b4cc7284b678b3f2622d26",
+      "current_sha256": "485d522a5779eb5092513384360484ab3ec35b9938b4cc7284b678b3f2622d26",
+      "match": true
+    },
+    {
+      "path": "paper_output/code/modeling/sequence_models.py",
+      "archived_sha256": "5888380810eb4dea4a1c78d27c76119c2583606cfd67d3e264da4f602c67ee1a",
+      "current_sha256": "5888380810eb4dea4a1c78d27c76119c2583606cfd67d3e264da4f602c67ee1a",
+      "match": true
+    }
+  ],
+  "source_files": [
+    {
+      "path": "experiments/__init__.py",
+      "sha256": "47c6719a1b2f60c86ce5bbf279219d262921fb00bf6eedb3a1f9501b91436771"
+    },
+    {
+      "path": "experiments/risk_core.py",
+      "sha256": "6508a4c4bee8a1f76122ec03b75753ed8247d1fa01503d6534a914c7069612af"
+    },
+    {
+      "path": "experiments/run_q1_baselines.py",
+      "sha256": "30497d77a264dc668505a48e590f1645952ce12cef51cabf92f8c0183cb2c145"
+    },
+    {
+      "path": "experiments/run_q1_extension.py",
+      "sha256": "b515ce80177b157bf5e2a2431e80d96975b54523aeb00fb382020dd5df573c14"
+    },
+    {
+      "path": "experiments/run_q2_extension.py",
+      "sha256": "3914382d4be98ad58ced3e28630f1ec4e18faefaa837e1caea6b48b519642559"
+    },
+    {
+      "path": "experiments/run_q34_extension.py",
+      "sha256": "891c802e667dc8dcad4425f37028663bb28ef60324c60a5d2d7b50bb698c7df7"
+    },
+    {
+      "path": "paper_output/code/data_processing/download_public_datasets.py",
+      "sha256": "ec313439ba0293d7099535cdbc29d29d569933d565c25d32f36dac262ea58945"
+    },
+    {
+      "path": "paper_output/code/modeling/prepare_ku_daily.py",
+      "sha256": "94103a1689831651d95c1ad4e2cb8fa683219f104411906f873d335fb7e8c5e9"
+    },
+    {
+      "path": "paper_output/code/modeling/prepare_oulad_daily.py",
+      "sha256": "e4d55d8d59d1ec17da672bb7b409788724408ba6336cd7b9a2dfbf1455408a8c"
+    },
+    {
+      "path": "paper_output/code/modeling/q34_helpers.py",
+      "sha256": "485d522a5779eb5092513384360484ab3ec35b9938b4cc7284b678b3f2622d26"
+    },
+    {
+      "path": "paper_output/code/modeling/run_q1_full.py",
+      "sha256": "96810ca7f391fab49c74e19cbabcb5ed7a75e3e01da89d01876756a902f4f5c4"
+    },
+    {
+      "path": "paper_output/code/modeling/run_q2_oulad.py",
+      "sha256": "84470522d3086100c9e80e6c962c271d005e1cc9ce6f960d0406bee9726a79c3"
+    },
+    {
+      "path": "paper_output/code/modeling/run_q34_scenarios.py",
+      "sha256": "3431a2f40834043219cd08cb0dc09f2c14712e418a391c38dcd186c70477df53"
+    },
+    {
+      "path": "paper_output/code/modeling/sequence_models.py",
+      "sha256": "5888380810eb4dea4a1c78d27c76119c2583606cfd67d3e264da4f602c67ee1a"
+    },
+    {
+      "path": "paper_output/code/modeling/tests/test_sequence_models.py",
+      "sha256": "8f98132b9a78daf3e47a9577eeb56ff6307388c6a0109892481f4f9fd5da5591"
+    },
+    {
+      "path": "tests/test_additional_baselines.py",
+      "sha256": "38e36e257dec22c57da1a533e8e8f7707dc2f4c5fcf378d9f2ec1cf398d84be7"
+    },
+    {
+      "path": "tests/test_risk_core.py",
+      "sha256": "c33d9a942314852e79f9967517e7c350977276f64a6569bff2ce7a16818335b8"
+    },
+    {
+      "path": "tools/build_report.py",
+      "sha256": "cab782ab7966b879798bc511ab80fa98932461ed74a7216463d457d57222e3a7"
+    },
+    {
+      "path": "tools/verify_release.py",
+      "sha256": "58a57c576d58161fcaefde0ac93f518a3a532e5a23e57d66c354faacfc0f2ed7"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "paper_output/data_cleaned/ku_daily_panel.parquet",
+      "bytes": 7762869,
+      "sha256": "9460021a9b632408082db8a14d7722f520347db1ce9967ef10ae7c795281e5fb",
+      "uploaded": false
+    },
+    {
+      "path": "paper_output/data_cleaned/oulad_daily.parquet",
+      "bytes": 24551198,
+      "sha256": "f1619771fad18a9834f064426eca50a22c6763ad94a9c0c953a2c5d81a9d5bb5",
+      "uploaded": false
+    },
+    {
+      "path": "paper_output/data_cleaned/oulad_out_of_window_sensitivity.parquet",
+      "bytes": 409503,
+      "sha256": "8d5f0f1968463dc2c0329a7eea462753972ef5c7bba4cb30e6a4ebcd633b9000",
+      "uploaded": false
+    }
+  ],
+  "q2_replay_caveat": {
+    "auc_max_abs_difference": 7.5293221922789755e-06,
+    "note": "Small day-14 ranking differences retained; day-28/56 AUC match archived values. Old individual predictions unavailable."
+  },
+  "privacy_scan": {
+    "tracked_files": 57,
+    "forbidden_files": [],
+    "scope": "path and field-name checks plus curated staging, not a formal privacy guarantee"
+  },
+  "claim_gates": {
+    "numerical_checks": true,
+    "clinical_or_cognitive_state_validity": false,
+    "causal_strategy_effects": false,
+    "new_untouched_external_test": false,
+    "hsmm_implemented": false
+  }
+}

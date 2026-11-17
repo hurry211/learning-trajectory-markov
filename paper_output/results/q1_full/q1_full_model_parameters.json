@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "paper_output/code/modeling/run_q1_full.py",
+  "generated_at": "2026-08-24T01:11:45+00:00",
+  "observable_markov_chain_final": {
+    "alpha": 0.5,
+    "observation_labels": [
+      "Platform-Inactive",
+      "Low-Diversity-Content-Consumption",
+      "Diverse-Interaction",
+      "Assessment-or-Production"
+    ],
+    "start_probability": [
+      0.872528616024974,
+      0.09486645855012141,
+      0.032431494970516825,
+      0.0001734304543877905
+    ],
+    "transition_probability": [
+      [
+        0.782607380276236,
+        0.180947060152317,
+        0.028585662191816186,
+        0.007859897379630824
+      ],
+      [
+        0.527267348785411,
+        0.3912960256142549,
+        0.060166817475232594,
+        0.021269808125101507
+      ],
+      [
+        0.40826054865297084,
+        0.35148849797023,
+        0.20023988190429326,
+        0.04001107147250584
+      ],
+      [
+        0.4419197065416752,
+        0.33166904422253923,
+        0.1297126553902588,
+        0.0966985938455268
+      ]
+    ]
+  },
+  "categorical_hmm_final": {
+    "status": "strictly_converged",
+    "k": 3,
+    "selected_start_seed": 1186211422,
+    "iterations": 222,
+    "observation_labels": [
+      "Platform-Inactive",
+      "Low-Diversity-Content-Consumption",
+      "Diverse-Interaction",
+      "Assessment-or-Production"
+    ],
+    "state_labels": [
+      "State 1",
+      "State 2",
+      "State 3"
+    ],
+    "start_probability": [
+      0.7463488818127623,
+      0.2104836008175159,
+      0.0431675173697219
+    ],
+    "transition_probability": [
+      [
+        0.9488454306298223,
+        0.01158365867670894,
+        0.039570910693468846
+      ],
+      [
+        0.02302728336523064,
+        0.9494430972144314,
+        0.027529619420337922
+      ],
+      [
+        0.07081997911812396,
+        0.19112558336760363,
+        0.7380544375142724
+      ]
+    ],
+    "emission_probability": [
+      [
+        0.9368719655938821,
+        0.054521405256530854,
+        0.007123904668209095,
+        0.0014827244813780845
+      ],
+      [
+        0.6033655910875299,
+        0.3606486887195059,
+        0.023689649922369743,
+        0.0122960702705946
+      ],
+      [
+        0.15536480747836612,
+        0.48888948930111287,
+        0.28754353650680414,
+        0.0682021667137169
+      ]
+    ],
+    "state_semantics": "numbered platform-evidence states only"
+  },
+  "hsmm": {
+    "status": "needs_real_modeling",
+    "implemented": false,
+    "required_components": [
+      "explicit state-duration distributions",
+      "a valid HSMM likelihood/inference implementation",
+      "multi-start estimation and model selection",
+      "time-out and leave-course-out validation",
+      "duration posterior-predictive checks"
+    ],
+    "prohibited_shortcut": "Do not relabel an HMM dwell-time calculation as an HSMM."
+  }
+}
